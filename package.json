@@ -1,0 +1,21 @@
+{
+  "name": "xmascard",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.134.0",
+    "troisjs": "^0.3.4",
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@types/three": "^0.146.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "vite": "^4.0.0"
+  }
+}
