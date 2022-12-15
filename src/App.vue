@@ -184,7 +184,7 @@ export default {
 
       <DirectionalLight :position="{x: 3, y: 2, z: 2}" :intensity="0.75" :color="0xAAAAFF" />
 
-      <GltfModel src="src/assets/Christmas Tree.glb" v-for="i in 60" :scale="getScale(0.2 + (Math.random() * 0.1))" 
+      <GltfModel src="/src/assets/Christmas Tree.glb" v-for="i in 60" :scale="getScale(0.2 + (Math.random() * 0.1))" 
       :position="this.treePositions[i - 1]"/>
       
       <PointLight v-for="i in 160" :ref="`light${i}`" :intensity="0.85" :position="this.lightPositions[i - 1]" :scale="getScale(0.15 + (0.2 * Math.random()))" :distance="9">
@@ -197,13 +197,13 @@ export default {
       
       <Cylinder ref='ground' :radiusTop="50" :radiusBottom="55" :height="8" :radialSegments="64" :heightSegments="32">
         <LambertMaterial >
-          <Texture src="src/assets/woodTex.jpg" />
+          <Texture src="/src/assets/woodTex.jpg" />
         </LambertMaterial>
       </Cylinder>
 
       <Box :position="{x: 0, y: 35, z: 0}" :scale="{x: 20, y: 20, z: 20}">
         <LambertMaterial>
-          <Texture src="src/assets/CubeTex/tex.jpg"/>
+          <Texture src="/src/assets/CubeTex/tex.jpg"/>
         </LambertMaterial>
       </Box>
 
